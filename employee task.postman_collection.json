@@ -1,0 +1,2192 @@
+{
+	"info": {
+		"_postman_id": "98ffb22a-6760-46fb-9721-cc9faf0ac377",
+		"name": "employee task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6996352"
+	},
+	"item": [
+		{
+			"name": "VacationType",
+			"item": [
+				{
+					"name": "/VacationType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/VacationType",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VacationType"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/VacationType",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationType"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/VacationType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "RoleId",
+								"value": "<integer>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"vacationTypeId\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"intialValue\": \"<integer>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/VacationType",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VacationType"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "RoleId",
+										"value": "<integer>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"vacationTypeId\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"intialValue\": \"<integer>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/VacationType",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationType"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/VacationType/:vacationTypeId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/VacationType/:vacationTypeId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VacationType",
+								":vacationTypeId"
+							],
+							"variable": [
+								{
+									"key": "vacationTypeId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/VacationType/:vacationTypeId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationType",
+										":vacationTypeId"
+									],
+									"variable": [
+										{
+											"key": "vacationTypeId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/VacationType/:vacationTypeId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "RoleId",
+								"value": "<integer>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"vacationTypeId\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"intialValue\": \"<integer>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/VacationType/:vacationTypeId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VacationType",
+								":vacationTypeId"
+							],
+							"variable": [
+								{
+									"key": "vacationTypeId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "RoleId",
+										"value": "<integer>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"vacationTypeId\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"intialValue\": \"<integer>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/VacationType/:vacationTypeId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationType",
+										":vacationTypeId"
+									],
+									"variable": [
+										{
+											"key": "vacationTypeId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/VacationType/:vacationTypeId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "RoleId",
+								"value": "<integer>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/VacationType/:vacationTypeId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VacationType",
+								":vacationTypeId"
+							],
+							"variable": [
+								{
+									"key": "vacationTypeId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "RoleId",
+										"value": "<integer>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/VacationType/:vacationTypeId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationType",
+										":vacationTypeId"
+									],
+									"variable": [
+										{
+											"key": "vacationTypeId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "VacationRequests",
+			"item": [
+				{
+					"name": "GetUserRequests",
+					"item": [
+						{
+							"name": "/VacationRequests/userRequests/:userId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/VacationRequests/userRequests/:userId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationRequests",
+										"userRequests",
+										":userId"
+									],
+									"variable": [
+										{
+											"key": "userId",
+											"value": "<integer>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/VacationRequests/userRequests/:userId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"VacationRequests",
+												"userRequests",
+												":userId"
+											],
+											"variable": [
+												{
+													"key": "userId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "getFilteredList",
+					"item": [
+						{
+							"name": "/VacationRequests/getFilteredList",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"status\": \"<boolean>\",\n  \"userId\": \"<integer>\",\n  \"vacationTypeId\": \"<integer>\",\n  \"currentPage\": \"<integer>\",\n  \"pageSize\": \"<integer>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/VacationRequests/getFilteredList",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationRequests",
+										"getFilteredList"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"status\": \"<boolean>\",\n  \"userId\": \"<integer>\",\n  \"vacationTypeId\": \"<integer>\",\n  \"currentPage\": \"<integer>\",\n  \"pageSize\": \"<integer>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/VacationRequests/getFilteredList",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"VacationRequests",
+												"getFilteredList"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "reject",
+					"item": [
+						{
+							"name": "/VacationRequests/vacationRequests/reject/:Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "RoleId",
+										"value": "<integer>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/VacationRequests/vacationRequests/reject/:Id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationRequests",
+										"vacationRequests",
+										"reject",
+										":Id"
+									],
+									"variable": [
+										{
+											"key": "Id",
+											"value": "<integer>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "RoleId",
+												"value": "<integer>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/VacationRequests/vacationRequests/reject/:Id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"VacationRequests",
+												"vacationRequests",
+												"reject",
+												":Id"
+											],
+											"variable": [
+												{
+													"key": "Id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "accept",
+					"item": [
+						{
+							"name": "/VacationRequests/vacationRequests/accept/:Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "RoleId",
+										"value": "<integer>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/VacationRequests/vacationRequests/accept/:Id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationRequests",
+										"vacationRequests",
+										"accept",
+										":Id"
+									],
+									"variable": [
+										{
+											"key": "Id",
+											"value": "<integer>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "RoleId",
+												"value": "<integer>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/VacationRequests/vacationRequests/accept/:Id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"VacationRequests",
+												"vacationRequests",
+												"accept",
+												":Id"
+											],
+											"variable": [
+												{
+													"key": "Id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/VacationRequests",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"vacationRequestId\": \"<integer>\",\n  \"userFullName\": \"<string>\",\n  \"userId\": \"<integer>\",\n  \"status\": \"<boolean>\",\n  \"vacationTypeId\": \"<integer>\",\n  \"vacationType\": \"<string>\",\n  \"startDate\": \"<dateTime>\",\n  \"endDate\": \"<dateTime>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/VacationRequests",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VacationRequests"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"vacationRequestId\": \"<integer>\",\n  \"userFullName\": \"<string>\",\n  \"userId\": \"<integer>\",\n  \"status\": \"<boolean>\",\n  \"vacationTypeId\": \"<integer>\",\n  \"vacationType\": \"<string>\",\n  \"startDate\": \"<dateTime>\",\n  \"endDate\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/VacationRequests",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationRequests"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/VacationRequests/:vacationRequestId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "RoleId",
+								"value": "<integer>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"vacationRequestId\": \"<integer>\",\n  \"userFullName\": \"<string>\",\n  \"userId\": \"<integer>\",\n  \"status\": \"<boolean>\",\n  \"vacationTypeId\": \"<integer>\",\n  \"vacationType\": \"<string>\",\n  \"startDate\": \"<dateTime>\",\n  \"endDate\": \"<dateTime>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/VacationRequests/:vacationRequestId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VacationRequests",
+								":vacationRequestId"
+							],
+							"variable": [
+								{
+									"key": "vacationRequestId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "RoleId",
+										"value": "<integer>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"vacationRequestId\": \"<integer>\",\n  \"userFullName\": \"<string>\",\n  \"userId\": \"<integer>\",\n  \"status\": \"<boolean>\",\n  \"vacationTypeId\": \"<integer>\",\n  \"vacationType\": \"<string>\",\n  \"startDate\": \"<dateTime>\",\n  \"endDate\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/VacationRequests/:vacationRequestId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationRequests",
+										":vacationRequestId"
+									],
+									"variable": [
+										{
+											"key": "vacationRequestId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/VacationRequests/:vacationRequestId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "RoleId",
+								"value": "<integer>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/VacationRequests/:vacationRequestId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VacationRequests",
+								":vacationRequestId"
+							],
+							"variable": [
+								{
+									"key": "vacationRequestId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "RoleId",
+										"value": "<integer>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/VacationRequests/:vacationRequestId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationRequests",
+										":vacationRequestId"
+									],
+									"variable": [
+										{
+											"key": "vacationRequestId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/VacationRequests/:vacationRequestId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/VacationRequests/:vacationRequestId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VacationRequests",
+								":vacationRequestId"
+							],
+							"variable": [
+								{
+									"key": "vacationRequestId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/VacationRequests/:vacationRequestId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationRequests",
+										":vacationRequestId"
+									],
+									"variable": [
+										{
+											"key": "vacationRequestId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "VacationBalance",
+			"item": [
+				{
+					"name": "/VacationBalance",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "RoleId",
+								"value": "<integer>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"vacationBalanceId\": \"<integer>\",\n  \"vacationTypeId\": \"<integer>\",\n  \"vacationType\": \"<string>\",\n  \"balance\": \"<integer>\",\n  \"used\": \"<integer>\",\n  \"userId\": \"<integer>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/VacationBalance",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VacationBalance"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "RoleId",
+										"value": "<integer>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"vacationBalanceId\": \"<integer>\",\n  \"vacationTypeId\": \"<integer>\",\n  \"vacationType\": \"<string>\",\n  \"balance\": \"<integer>\",\n  \"used\": \"<integer>\",\n  \"userId\": \"<integer>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/VacationBalance",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationBalance"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/VacationBalance/:vacationBalanceId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "roleId",
+								"value": "<integer>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"vacationBalanceId\": \"<integer>\",\n  \"vacationTypeId\": \"<integer>\",\n  \"vacationType\": \"<string>\",\n  \"balance\": \"<integer>\",\n  \"used\": \"<integer>\",\n  \"userId\": \"<integer>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/VacationBalance/:vacationBalanceId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VacationBalance",
+								":vacationBalanceId"
+							],
+							"variable": [
+								{
+									"key": "vacationBalanceId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "roleId",
+										"value": "<integer>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"vacationBalanceId\": \"<integer>\",\n  \"vacationTypeId\": \"<integer>\",\n  \"vacationType\": \"<string>\",\n  \"balance\": \"<integer>\",\n  \"used\": \"<integer>\",\n  \"userId\": \"<integer>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/VacationBalance/:vacationBalanceId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationBalance",
+										":vacationBalanceId"
+									],
+									"variable": [
+										{
+											"key": "vacationBalanceId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/VacationBalance/:vacationBalanceId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/VacationBalance/:vacationBalanceId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VacationBalance",
+								":vacationBalanceId"
+							],
+							"variable": [
+								{
+									"key": "vacationBalanceId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/VacationBalance/:vacationBalanceId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationBalance",
+										":vacationBalanceId"
+									],
+									"variable": [
+										{
+											"key": "vacationBalanceId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/VacationBalance/:vacationBalanceId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "RoleId",
+								"value": "<integer>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/VacationBalance/:vacationBalanceId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VacationBalance",
+								":vacationBalanceId"
+							],
+							"variable": [
+								{
+									"key": "vacationBalanceId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "RoleId",
+										"value": "<integer>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/VacationBalance/:vacationBalanceId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationBalance",
+										":vacationBalanceId"
+									],
+									"variable": [
+										{
+											"key": "vacationBalanceId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/VacationBalance/GetUseerVacationBalances/:userID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/VacationBalance/GetUseerVacationBalances/:userID",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"VacationBalance",
+								"GetUseerVacationBalances",
+								":userID"
+							],
+							"variable": [
+								{
+									"key": "userID",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/VacationBalance/GetUseerVacationBalances/:userID",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"VacationBalance",
+										"GetUseerVacationBalances",
+										":userID"
+									],
+									"variable": [
+										{
+											"key": "userID"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "/Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Users",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Users",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/Users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "RoleId",
+								"value": "<integer>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": \"<integer>\",\n  \"fullName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"birhthDate\": \"<dateTime>\",\n  \"genderId\": \"<integer>\",\n  \"gender\": \"<string>\",\n  \"roleId\": \"<integer>\",\n  \"role\": \"<string>\",\n  \"vacationBalanceDTOs\": [\n    {\n      \"vacationBalanceId\": \"<integer>\",\n      \"vacationTypeId\": \"<integer>\",\n      \"vacationType\": \"<string>\",\n      \"balance\": \"<integer>\",\n      \"used\": \"<integer>\",\n      \"userId\": \"<integer>\"\n    },\n    {\n      \"vacationBalanceId\": \"<integer>\",\n      \"vacationTypeId\": \"<integer>\",\n      \"vacationType\": \"<string>\",\n      \"balance\": \"<integer>\",\n      \"used\": \"<integer>\",\n      \"userId\": \"<integer>\"\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Users",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "RoleId",
+										"value": "<integer>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"userId\": \"<integer>\",\n  \"fullName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"birhthDate\": \"<dateTime>\",\n  \"genderId\": \"<integer>\",\n  \"gender\": \"<string>\",\n  \"roleId\": \"<integer>\",\n  \"role\": \"<string>\",\n  \"vacationBalanceDTOs\": [\n    {\n      \"vacationBalanceId\": \"<integer>\",\n      \"vacationTypeId\": \"<integer>\",\n      \"vacationType\": \"<string>\",\n      \"balance\": \"<integer>\",\n      \"used\": \"<integer>\",\n      \"userId\": \"<integer>\"\n    },\n    {\n      \"vacationBalanceId\": \"<integer>\",\n      \"vacationTypeId\": \"<integer>\",\n      \"vacationType\": \"<string>\",\n      \"balance\": \"<integer>\",\n      \"used\": \"<integer>\",\n      \"userId\": \"<integer>\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Users",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/Users/:userId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Users/:userId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Users",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Users/:userId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Users",
+										":userId"
+									],
+									"variable": [
+										{
+											"key": "userId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/Users/:userId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "RoleId",
+								"value": "<integer>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": \"<integer>\",\n  \"fullName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"birhthDate\": \"<dateTime>\",\n  \"genderId\": \"<integer>\",\n  \"gender\": \"<string>\",\n  \"roleId\": \"<integer>\",\n  \"role\": \"<string>\",\n  \"vacationBalanceDTOs\": [\n    {\n      \"vacationBalanceId\": \"<integer>\",\n      \"vacationTypeId\": \"<integer>\",\n      \"vacationType\": \"<string>\",\n      \"balance\": \"<integer>\",\n      \"used\": \"<integer>\",\n      \"userId\": \"<integer>\"\n    },\n    {\n      \"vacationBalanceId\": \"<integer>\",\n      \"vacationTypeId\": \"<integer>\",\n      \"vacationType\": \"<string>\",\n      \"balance\": \"<integer>\",\n      \"used\": \"<integer>\",\n      \"userId\": \"<integer>\"\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Users/:userId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Users",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "RoleId",
+										"value": "<integer>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"userId\": \"<integer>\",\n  \"fullName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"birhthDate\": \"<dateTime>\",\n  \"genderId\": \"<integer>\",\n  \"gender\": \"<string>\",\n  \"roleId\": \"<integer>\",\n  \"role\": \"<string>\",\n  \"vacationBalanceDTOs\": [\n    {\n      \"vacationBalanceId\": \"<integer>\",\n      \"vacationTypeId\": \"<integer>\",\n      \"vacationType\": \"<string>\",\n      \"balance\": \"<integer>\",\n      \"used\": \"<integer>\",\n      \"userId\": \"<integer>\"\n    },\n    {\n      \"vacationBalanceId\": \"<integer>\",\n      \"vacationTypeId\": \"<integer>\",\n      \"vacationType\": \"<string>\",\n      \"balance\": \"<integer>\",\n      \"used\": \"<integer>\",\n      \"userId\": \"<integer>\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Users/:userId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Users",
+										":userId"
+									],
+									"variable": [
+										{
+											"key": "userId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/Users/:userId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "RoleId",
+								"value": "<integer>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/Users/:userId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Users",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "RoleId",
+										"value": "<integer>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/Users/:userId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Users",
+										":userId"
+									],
+									"variable": [
+										{
+											"key": "userId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "/Role",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Role",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Role"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Role",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Role"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/Role",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"roleId\": \"<integer>\",\n  \"name\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Role",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Role"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"roleId\": \"<integer>\",\n  \"name\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Role",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Role"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/Role/:roleId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Role/:roleId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Role",
+								":roleId"
+							],
+							"variable": [
+								{
+									"key": "roleId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Role/:roleId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Role",
+										":roleId"
+									],
+									"variable": [
+										{
+											"key": "roleId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/Role/:roleId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"roleId\": \"<integer>\",\n  \"name\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Role/:roleId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Role",
+								":roleId"
+							],
+							"variable": [
+								{
+									"key": "roleId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"roleId\": \"<integer>\",\n  \"name\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Role/:roleId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Role",
+										":roleId"
+									],
+									"variable": [
+										{
+											"key": "roleId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/Role/:roleId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Role/:roleId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Role",
+								":roleId"
+							],
+							"variable": [
+								{
+									"key": "roleId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Role/:roleId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Role",
+										":roleId"
+									],
+									"variable": [
+										{
+											"key": "roleId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Gender",
+			"item": [
+				{
+					"name": "/Gender",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Gender",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Gender"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Gender",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Gender"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/Gender",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"genderId\": \"<integer>\",\n  \"name\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Gender",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Gender"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"genderId\": \"<integer>\",\n  \"name\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Gender",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Gender"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/Gender/:genderId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Gender/:genderId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Gender",
+								":genderId"
+							],
+							"variable": [
+								{
+									"key": "genderId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Gender/:genderId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Gender",
+										":genderId"
+									],
+									"variable": [
+										{
+											"key": "genderId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/Gender/:genderId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"genderId\": \"<integer>\",\n  \"name\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/Gender/:genderId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Gender",
+								":genderId"
+							],
+							"variable": [
+								{
+									"key": "genderId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"genderId\": \"<integer>\",\n  \"name\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/Gender/:genderId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Gender",
+										":genderId"
+									],
+									"variable": [
+										{
+											"key": "genderId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/Gender/:genderId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/Gender/:genderId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"Gender",
+								":genderId"
+							],
+							"variable": [
+								{
+									"key": "genderId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/Gender/:genderId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"Gender",
+										":genderId"
+									],
+									"variable": [
+										{
+											"key": "genderId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
