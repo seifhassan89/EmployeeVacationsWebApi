@@ -15,7 +15,7 @@ To get started with this project, follow these steps:
 ## Installing
 1. Clone the repository to your local machine.
 ```
-git clone https://github.com/your-username/employee-vacation-manager.git
+git clone https://github.com/seifhassan89/employee-vacation-manager.git
 ```
 2. Navigate to the project directory.
 ```
